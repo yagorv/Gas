@@ -7,4 +7,4 @@ Fetch data with retrofit, and implement observable pattern with LiveData.
 
 Dependency injection using Dagger.
 
-Add Lottie animations to UI when APP downloads data.
+Corroutine to asyn tasks
