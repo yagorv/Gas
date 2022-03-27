@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorWarning">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white20">#33FFFFFF</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBlack">#333333</color>
+
+    <!-- avatars -->
+    <color name="category2">#ffa300</color>
+    <color name="category1">#011242</color>
+    <color name="category3">#7BB657</color>
+    <color name="category4">#fd112b</color>
+
+    <color name="avatar1">#7BB657</color>
+    <color name="avatar2">#CB4A3B</color>
+    <color name="avatar3">#EB9D9C</color>
+    <color name="avatar4">#E23D57</color>
+    <color name="avatar5">#B3CC4B</color>
+    <color name="avatar6">#006C9D</color>
+    <color name="avatar7">#5C579F</color>
+    <color name="avatar8">#E77116</color>
+    <color name="avatar9">#56BDE7</color>
+    <color name="avatar10">#ED9291</color>
+
+</resources>

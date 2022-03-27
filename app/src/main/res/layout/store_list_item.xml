@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.yago.gas.domain.customdata.Store" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="store"
+            type="Store" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{clickListener}"
+        android:padding="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/colorView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    app:categoryColor="@{store.category}"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:background="@color/avatar2" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="8dp"
+                    app:categoryImage="@{store.category}"
+                    app:layout_constraintBottom_toBottomOf="@id/colorView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/colorView"
+                    tools:src="@mipmap/leisure_colour" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:bindDistance="@{store.distance}"
+                    app:layout_constraintBottom_toBottomOf="@id/chevron"
+                    app:layout_constraintEnd_toStartOf="@id/chevron"
+                    app:layout_constraintTop_toTopOf="@id/chevron"
+                    tools:text="250 m." />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/chevron"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="6dp"
+                    android:src="@drawable/ic_baseline_chevron_right_24"
+                    app:layout_constraintBottom_toBottomOf="@id/colorView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/colorView" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/storeImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="12dp"
+                    android:src="@mipmap/cart_colour"
+                    app:imageUrl="@{store.imageUrl}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/colorView" />
+
+                <TextView
+                    android:id="@+id/storeName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@{store.name}"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/storeImage"
+                    app:layout_constraintTop_toTopOf="@id/storeImage"
+                    tools:text="Store name" />
+
+                <TextView
+                    android:id="@+id/storeDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@{store.shortDescription}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/storeImage"
+                    app:layout_constraintTop_toBottomOf="@id/storeName"
+                    tools:text="Descripcion deTienda 1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

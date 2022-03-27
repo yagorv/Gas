@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="shared_preferences_name" translatable="false">GasSHP</string>
+
+    <string name="klikin_base_url" translatable="false">http://prod.klikin.com/</string>
+
+    <string name="google_maps_link" translatable="false">google.navigation:q=%1s,%1s&amp;mode=d</string>
+
+</resources>

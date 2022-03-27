@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Common -->
+    <string name="app_name">Gas App</string>
+    <string name="welcome">¡Welcome!</string>
+    <string name="ok">OK</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="location">Localización</string>
+    <string name="go_here">Llévame aquí</string>
+    <string name="about_store">Sobre el comercio</string>
+    <string name="stores">Comercios</string>
+    <string name="near_stores">A menos de 1km</string>
+
+    <!-- Messages -->
+    <string name="allow_location_title">Necesitamos la localización</string>
+    <string name="allow_location_description">Por favor, activa la localización en tu dispositivo</string>
+
+    <!-- Categories -->
+    <string name="category_beauty">BEAUTY</string>
+    <string name="category_food">FOOD</string>
+    <string name="category_shopping">SHOPPING</string>
+    <string name="category_unknown">UNKNOWN</string>
+
+    <string name="place_meters">%1s m.</string>
+    <string name="place_kms">%1s km.</string>
+
+</resources>
